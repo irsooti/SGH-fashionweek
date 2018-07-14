@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*  Typography  */
+body {
+  font-family: 'Brandon';
+  font-size: 17px; }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(/fonts/brandon_med-webfont.woff);
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(/fonts/brandon_bld-webfont.woff);
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(/fonts/brandon_reg-webfont.woff);
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(/fonts/brandon_thin-webfont.woff);
+  font-weight: 100; }
+
+.bold {
+  font-weight: bold; }
+
+.bolder {
+  font-weight: bolder; }
+
+.upper {
+  text-transform: uppercase; }
+
+.text-center {
+  text-align: center; }
+
+h3 {
+  font-size: 2em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 11px; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end; }
+  .toolbar .logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 53px;
+    vertical-align: middle; }
+  .toolbar * {
+    text-decoration: none; }
+  .toolbar > a {
+    display: flex;
+    align-self: center;
+    font-weight: bold; }
+  .toolbar .logo-title {
+    color: inherit;
+    width: 100%;
+    justify-content: center; }
+    .toolbar .logo-title span {
+      align-self: center; }
+  .toolbar [class$="-button"] {
+    width: 53px;
+    height: 53px;
+    justify-content: center;
+    flex-shrink: 0; }
+    .toolbar [class$="-button"] span {
+      align-self: center; }
+  .toolbar .bag-button {
+    background-color: #e74c3c; }
+    .toolbar .bag-button img {
+      align-self: center;
+      width: 17px;
+      height: 21px; }
+
+.offerbar {
+  text-align: center;
+  padding-left: 17px;
+  background: #000000;
+  color: #FFFFFF;
+  padding-right: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.7rem; }
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  display: block; }
+
+.carousel-controls {
+  margin-top: 32px;
+  display: flex;
+  border-top: solid 1px #000000;
+  border-bottom: solid 1px #000000;
+  flex-wrap: nowrap; }
+
+[class^="carousel-ctrl"] {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  align-self: center;
+  line-height: normal;
+  letter-spacing: 5.1px;
+  text-transform: uppercase;
+  color: #a7a7a7; }
+  [class^="carousel-ctrl"] * {
+    display: block; }
+  [class^="carousel-ctrl"] .time {
+    letter-spacing: normal; }
+  [class^="carousel-ctrl"].active {
+    color: #000000; }
+
+.carousel-ctrl-next, .carousel-ctrl-prev {
+  max-width: 20px; }
+  .carousel-ctrl-next img, .carousel-ctrl-prev img {
+    vertical-align: middle; }
+
+.hero {
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  line-height: 1.31; }
+  .hero h2 {
+    font-weight: bolder;
+    font-size: 2em; }
+
+.slider {
+  margin-top: 33px;
+  display: flex; }
+  .slider .prev, .slider .next {
+    width: 70px;
+    align-self: center;
+    text-align: center; }
+    .slider .prev img, .slider .next img {
+      padding: 16px;
+      width: 14px; }
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold; }
+  .btn.default {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase; }
+
+.photographer-credits {
+  padding-top: 39px;
+  line-height: 2; }
+  .photographer-credits .logo {
+    width: 150px;
+    vertical-align: middle; }
+
+.divider:before {
+  content: "";
+  display: block;
+  width: 137px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #000000; }
+
+.section {
+  position: relative;
+  margin-top: 42px; }
+  .section .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%; }
+  .section .banner-ny {
+    text-align: center;
+    padding: 45px 36px;
+    padding-bottom: 35px; }
+    .section .banner-ny img {
+      max-width: 100%; }
+  .section .article {
+    margin-top: 35px;
+    line-height: 1.57;
+    margin-bottom: 68px; }
