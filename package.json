@@ -19,6 +19,7 @@
     "parcel": "^1.9.6"
   },
   "dependencies": {
+    "flickity": "^2.1.2",
     "meyer-reset-sass": "^1.0.1"
   }
 }

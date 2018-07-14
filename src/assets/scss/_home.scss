@@ -27,7 +27,7 @@
         z-index: -1;
         width: 100%;
     }
-    .banner-ny {
+    [class^="banner-"] {
         text-align: center; 
         padding: 45px 36px;
         padding-bottom: 35px;
@@ -40,5 +40,24 @@
         margin-top: 35px;
         line-height: 1.57;
         margin-bottom: 68px;
+    }
+
+
+}
+
+.latest {
+    margin-top: 80px;
+    .carousel-cell {
+        width: auto;
+        img {
+        padding: 8px;
+
+            max-width: 150px;
+        }
+
+        &[aria-selected="false"] {
+            opacity: 0.2;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+        }
     }
 }

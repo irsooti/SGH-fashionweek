@@ -4,15 +4,15 @@
 
 .carousel-controls {
     margin-top: 32px;
-    display: flex;
+    // display: flex;
     border-top: solid 1px #000000;
     border-bottom: solid 1px #000000;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
     
 }
 
 [class^="carousel-ctrl"] {
-    width: 50%;
+    // width: 40%;
     text-align: center;
     padding: 10px;
     font-size: 14px;
@@ -30,8 +30,9 @@
     .time {
         letter-spacing: normal
     }
-    &.active {
+    &[aria-selected="true"] {
         color: #000000;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     }
 }
 

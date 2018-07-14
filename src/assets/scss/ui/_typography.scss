@@ -28,6 +28,9 @@ body {
     src: url(/fonts/brandon_thin-webfont.woff);
     font-weight: 100;
 }
+a {
+    text-decoration: none;
+}
 
 .bold {
     font-weight: bold;
@@ -47,7 +50,14 @@ body {
 
 h3 {
     font-size: 2em;
-    font-weight: bolder;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 11px;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }

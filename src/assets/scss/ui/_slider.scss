@@ -1,17 +1,30 @@
 .slider {
     margin-top: 33px;
-    display: flex;
-    .prev, .next {
-        width: 70px;
-        align-self: center;
-        text-align: center;
-        img {
-            padding: 16px; 
-            width: 14px;
-        }
-    }
-    [class^="slide"] {
+    display: block;
+    // .prev, .next {
+    //     width: 70px;
+    //     align-self: center;
+    //     text-align: center;
+    //     img {
+    //         padding: 16px; 
+    //         width: 14px;
+    //     }
+    // }
+    // [class^="slide"] {
+    //     width: 100%;
+    //     text-align: center;
+    // }
+
+    .carousel-cell {
         width: 100%;
         text-align: center;
+        img {
+            vertical-align: middle;
+        }
+
+        .photographer-credits {
+            margin-bottom: 10px;
+        }
     }
 }
+
