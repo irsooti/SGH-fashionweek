@@ -6,13 +6,19 @@
   "repository": "https://github.com/irsooti/SGH-fashionweek.git",
   "author": "<irsooti@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^1.2.0",
-    "parcel": "^1.9.6"
-  },
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build src/index.html && yarn cp-fonts",
+    "deploy": "gh-pages -d dist",
+    "cp-fonts": "node .\\scripts\\copyFonts.js"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "ncp": "^2.0.0",
+    "node-sass": "^4.9.2",
+    "parcel": "^1.9.6"
+  },
+  "dependencies": {
+    "meyer-reset-sass": "^1.0.1"
   }
 }

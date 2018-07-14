@@ -1,0 +1,13 @@
+.btn {
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    &.default {
+        display: inline-block;  
+        padding: 7px 10px;
+        background-color: #000000;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+}

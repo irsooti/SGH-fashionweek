@@ -1,0 +1,53 @@
+/*  Typography  */
+
+body {
+    font-family: 'Brandon';
+    font-size: $fontSize;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(/fonts/brandon_med-webfont.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(/fonts/brandon_bld-webfont.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(/fonts/brandon_reg-webfont.woff);
+    font-weight: 400
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(/fonts/brandon_thin-webfont.woff);
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+}

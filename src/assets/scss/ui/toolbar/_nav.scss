@@ -1,0 +1,48 @@
+.toolbar {
+    .logo {
+        // width: 100%;
+        // height: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 53px;
+        vertical-align: middle
+    }
+    display: flex;
+    justify-content: flex-end;
+    * {
+        text-decoration: none;
+    }
+
+    > a {
+        display: flex;
+        align-self: center;
+        font-weight: bold;
+
+    }
+
+    .logo-title {
+        color: inherit;
+        width: 100%;
+        justify-content: center;
+        span {
+            align-self: center;
+        }
+    }
+    [class$="-button"] {
+        width: 53px;
+        height: 53px;
+        justify-content: center;
+        flex-shrink: 0;
+        span {
+            align-self: center;
+        }
+    }
+    .bag-button {
+        background-color: #e74c3c;
+        img {
+            align-self: center;
+            width: 17px;
+            height: 21px;
+        }
+    }
+}

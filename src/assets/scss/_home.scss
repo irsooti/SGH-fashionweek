@@ -1,0 +1,44 @@
+.photographer-credits {
+    padding-top: 39px;
+    line-height: 2;
+    .logo {
+        width: 150px;
+        vertical-align: middle;
+    }
+}
+
+.divider:before {
+    content: "";
+    display: block;
+    width: 137px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #000000
+}
+
+.section {
+    position: relative;
+    margin-top: 42px;
+    .map {
+        position: absolute;
+        top: 0;
+        left: 0;            
+        z-index: -1;
+        width: 100%;
+    }
+    .banner-ny {
+        text-align: center; 
+        padding: 45px 36px;
+        padding-bottom: 35px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .article {
+        margin-top: 35px;
+        line-height: 1.57;
+        margin-bottom: 68px;
+    }
+}
