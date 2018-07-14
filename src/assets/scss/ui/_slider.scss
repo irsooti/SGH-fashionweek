@@ -10,4 +10,8 @@
             width: 14px;
         }
     }
+    [class^="slide"] {
+        width: 100%;
+        text-align: center;
+    }
 }

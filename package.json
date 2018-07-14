@@ -8,9 +8,9 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html && yarn cp-fonts",
-    "deploy": "gh-pages -d dist",
-    "cp-fonts": "node .\\scripts\\copyFonts.js"
+    "build": "parcel build src/index.html && yarn cp",
+    "deploy": "yarn build && gh-pages -d dist",
+    "cp": "node .\\scripts\\copy.js"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
