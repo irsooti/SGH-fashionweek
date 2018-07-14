@@ -55,6 +55,9 @@ body {
   src: url(/fonts/brandon_thin-webfont.woff);
   font-weight: 100; }
 
+a {
+  text-decoration: none; }
+
 .bold {
   font-weight: bold; }
 
@@ -69,9 +72,15 @@ body {
 
 h3 {
   font-size: 2em;
-  font-weight: bolder;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 11px; }
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
 
 .toolbar {
   display: flex;
@@ -86,7 +95,8 @@ h3 {
   .toolbar > a {
     display: flex;
     align-self: center;
-    font-weight: bold; }
+    font-weight: bold;
+    color: inherit; }
   .toolbar .logo-title {
     color: inherit;
     width: 100%;
@@ -126,13 +136,10 @@ h3 {
 
 .carousel-controls {
   margin-top: 32px;
-  display: flex;
   border-top: solid 1px #000000;
-  border-bottom: solid 1px #000000;
-  flex-wrap: nowrap; }
+  border-bottom: solid 1px #000000; }
 
 [class^="carousel-ctrl"] {
-  width: 50%;
   text-align: center;
   padding: 10px;
   font-size: 14px;
@@ -148,8 +155,9 @@ h3 {
     display: block; }
   [class^="carousel-ctrl"] .time {
     letter-spacing: normal; }
-  [class^="carousel-ctrl"].active {
-    color: #000000; }
+  [class^="carousel-ctrl"][aria-selected="true"] {
+    color: #000000;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s; }
 
 .carousel-ctrl-next, .carousel-ctrl-prev {
   max-width: 20px; }
@@ -168,17 +176,14 @@ h3 {
 
 .slider {
   margin-top: 33px;
-  display: flex; }
-  .slider .prev, .slider .next {
-    width: 70px;
-    align-self: center;
-    text-align: center; }
-    .slider .prev img, .slider .next img {
-      padding: 16px;
-      width: 14px; }
-  .slider [class^="slide"] {
+  display: block; }
+  .slider .carousel-cell {
     width: 100%;
     text-align: center; }
+    .slider .carousel-cell img {
+      vertical-align: middle; }
+    .slider .carousel-cell .photographer-credits {
+      margin-bottom: 10px; }
 
 .btn {
   text-align: center;
@@ -187,9 +192,11 @@ h3 {
   font-weight: bold; }
   .btn.default {
     display: inline-block;
-    padding: 7px 10px;
+    padding: 13px 35px;
     background-color: #000000;
     color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
     text-transform: uppercase; }
 
 .photographer-credits {
@@ -217,13 +224,24 @@ h3 {
     left: 0;
     z-index: -1;
     width: 100%; }
-  .section .banner-ny {
+  .section [class^="banner-"] {
     text-align: center;
     padding: 45px 36px;
     padding-bottom: 35px; }
-    .section .banner-ny img {
+    .section [class^="banner-"] img {
       max-width: 100%; }
   .section .article {
     margin-top: 35px;
     line-height: 1.57;
     margin-bottom: 68px; }
+
+.latest {
+  margin-top: 80px; }
+  .latest .carousel-cell {
+    width: auto; }
+    .latest .carousel-cell img {
+      padding: 8px;
+      max-width: 150px; }
+    .latest .carousel-cell[aria-selected="false"] {
+      opacity: 0.2;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s; }
