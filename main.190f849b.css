@@ -176,6 +176,9 @@ h3 {
     .slider .prev img, .slider .next img {
       padding: 16px;
       width: 14px; }
+  .slider [class^="slide"] {
+    width: 100%;
+    text-align: center; }
 
 .btn {
   text-align: center;
