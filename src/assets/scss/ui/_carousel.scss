@@ -42,3 +42,15 @@
         vertical-align: middle;
     }
 }
+
+@media all and (min-width: $desktopSize) {
+    .carousel-controls {
+        border: none;
+        flex-wrap: nowrap;
+        justify-content: center;
+        display: flex;
+    }
+    [class^="carousel-ctrl"] {
+        padding: 15px 30px;
+    }
+}

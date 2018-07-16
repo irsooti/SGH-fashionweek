@@ -9,3 +9,20 @@
         font-size: 2em;
     }
 }
+
+
+@media all and (min-width: $desktopSize) {
+    .hero {
+        h2 {
+            font-size: 3em;
+        }
+    }
+
+    .banner-ny {
+        .article  {
+            max-width: 606px;
+            margin: auto;
+            font-weight: 500;
+        }
+    }
+}

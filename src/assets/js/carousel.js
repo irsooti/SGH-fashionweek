@@ -30,3 +30,5 @@ export const NavigatorCarousel = () => {
         // contain: true
     });
 }
+
+export default Flickity;

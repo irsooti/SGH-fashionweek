@@ -7,6 +7,7 @@
     }
 }
 
+
 .divider:before {
     content: "";
     display: block;
@@ -58,6 +59,82 @@
         &[aria-selected="false"] {
             opacity: 0.2;
             transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+        }
+    }
+}
+
+@media all and (min-width: $desktopSize) {
+    .hero {
+        &.photographer-credits {
+            padding-top: 22px;
+            line-height: 2.7;
+        }
+    }
+    .latest .carousel-cell img {
+        max-width: 200px
+    }
+    .coach-desktop {
+        .container-flex {
+            align-items: center;
+            justify-content: center
+        }
+        .photo {
+            margin: auto;
+            padding: 90px 140px ;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .fade-cta {
+            position: relative;
+            display: block;
+            margin: auto;
+            .bg-cta {
+                transition:  cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+                opacity: 0;                
+                width: 90%;
+                height: 100%;
+                margin: auto;
+                position: absolute;                
+                top: 0;
+                left: 0;
+                display: block;
+                .btn {
+                    position: relative;
+                    top: 50%;
+                }
+            }
+
+            &:hover .bg-cta {
+                opacity: 1;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+                margin: auto;
+                height: 80%;
+                width: 80%;
+                left: 10%;
+                top: 10%;
+                visibility: visible;
+                background: rgba(255, 255, 255, 0.9);
+            }
+        }
+        .photo-right {
+            padding: 90px;
+        }
+
+        .photo-left {
+            .title {
+                text-align: left;
+            }
+        }
+
+        .divider.m100 {
+            margin-bottom: 110px;
+        }
+        .divider:before {
+            margin-left: 0;
+            position: relative;
+            left: -15px;
         }
     }
 }

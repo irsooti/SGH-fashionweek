@@ -48,6 +48,10 @@ a {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
 h3 {
     font-size: 2em;
     font-weight: 700;
@@ -60,4 +64,10 @@ h4 {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+}
+
+@media all and (min-width: $desktopSize) {
+    body {
+        font-size: 23px;
+    }
 }

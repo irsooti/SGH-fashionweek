@@ -3,3 +3,32 @@
     margin: auto;
     display: block;
 }
+
+.container-flex {
+    display: flex;
+}
+
+.desktop-only {
+    display: none;
+}
+
+
+.f-column {
+    flex-direction: column; 
+}
+
+@media all and (min-width: $desktopSize) {
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+    
+
+    .d-col-6 {
+        display: flex;
+        width: 50%;
+    }
+}

@@ -85,7 +85,9 @@
         </div>
 
         <div id="newYorkSection" class="section">
-            <img class="map" src="assets/img/shutterstock-490883626.jpg" alt="ny map">
+            <img srcset="
+                assets/img/shutterstock-490883626.jpg 375w,
+                assets/img/map-new-york.jpg 1000w" class="map" src="assets/img/shutterstock-490883626.jpg" alt="ny map">
             <div class="banner-ny">
                 <img src="assets/img/banner-mobile-new-york.jpg" alt="ny">
 
@@ -95,7 +97,7 @@
                     stages exclusively photographed by Tommy Ton.
                 </div>
             </div>
-            <div class="coach">
+            <div class="coach-mobile mobile-only">
                 <h3 class="title text-center">Coach</h3>
                 <div class="divider"></div>
                 <div id="coach-carousel" class="slider" data-flickity='{ "lazyLoad": true }'>
@@ -173,32 +175,108 @@
                 </div>
 
             </div>
-        </div>
-        <div class="latest">
-            <h4 class="title text-center">Latest and brighter</h3>
-                <div class="divider"></div>
+            <div class="coach-desktop desktop-only">
+                <div class="container-flex text-center">
+                    <div class="d-col-6 f-column ">
 
-                <div id="latestandbrighter-carousel" class="slider" data-flickity='{ "lazyLoad": true }'>
-                    <div class="carousel-cell">
-                        <img src="assets/img/placeholder-slide.jpg">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="assets/img/placeholder-slide.jpg">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="assets/img/placeholder-slide.jpg">
-                    </div>
-                </div>
-        </div>
-        <div id="londonSection" class="section">
-            <img class="map" src="assets/img/map-mobile-london.png" alt="ny map">
-            <div class="banner-ny">
-                <img src="assets/img/banner-mobile-london.jpg" alt="london">
+                        <div class="photo photo-left">
+                            <h3 class="title text-center">Coach</h3>
+                            <div class="divider m100"></div>
+                            <img src="assets/img/new-york1.jpg" data-flickity-lazyload="1020-1.04d011a1.png">
+                            <div class="divider "></div>
+                            <div>
+                                <div class="photographer-credits text-center">
+                                    <div>
+                                        photographed by
+                                        <img height="13" src="./assets/img/logo-black.png">
+                                    </div>
+                                    <div class="upper">
+                                        NEW YORK, 09.12.17
+                                    </div>
 
-                <div class="article text-center bold">
-                    COMING SOON
+                                </div>
+                                <div>
+                                    <a class="btn default" href="#">
+                                        VIEW ALL FRAMES
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-col-6 f-column">
+                        <div class="photo photo-right">
+                            <div class="fade-cta">
+                                <img src="assets/img/new-york2.jpg" data-flickity-lazyload="1020-1.04d011a1.png">
+                                <div class="bg-cta">
+                                    <a class="btn default" href="#">
+                                        VIEW ALL FRAMES
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div>
+                                <div class="photographer-credits text-left">
+                                    <div>
+                                        photographed by
+                                        <img height="13" src="./assets/img/logo-black.png">
+                                    </div>
+                                    <div class="upper">
+                                        NEW YORK, 09.12.17
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="photo photo-right">
+                            <div class="">
+                                <img src="assets/img/0-ve-2184-125287-000-a.png" data-flickity-lazyload="1020-1.04d011a1.png">
+
+                            </div>
+                            <div>
+                                <div class="photographer-credits text-center">
+                                    <div>
+                                        <h4 class="bolder">GET INSPIRED</h4>
+                                        <h4>XXX</h4>
+
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <a class="btn default" href="#">
+                                        Shop now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="latest">
+                <h4 class="title text-center">Latest and brighter</h3>
+                    <div class="divider"></div>
+
+                    <div id="latestandbrighter-carousel" class="slider" data-flickity='{ "lazyLoad": true }'>
+                        <div class="carousel-cell">
+                            <img src="assets/img/placeholder-slide.jpg">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/img/placeholder-slide.jpg">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/img/placeholder-slide.jpg">
+                        </div>
+                    </div>
+            </div>
+            <div id="londonSection" class="section">
+                <img class="map" src="assets/img/map-mobile-london.png" alt="ny map">
+                <div class="banner-ny">
+                    <img src="assets/img/banner-mobile-london.jpg" alt="london">
+
+                    <div class="article text-center bold">
+                        COMING SOON
+                    </div>
+                </div>
 
 
 
