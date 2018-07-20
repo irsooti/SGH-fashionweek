@@ -16,3 +16,9 @@ ncp('scripts/gh', 'dist', function (err) {
   console.log('✔ CNAME copied!');
 })
 
+ncp('src/assets/img', 'dist/img', function (err) {
+  if (err) {
+    return console.error('👀 oops...', err);
+  }
+  console.log('✔ Images copied!');
+})

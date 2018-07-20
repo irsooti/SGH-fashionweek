@@ -6,6 +6,9 @@ export const CoachCarousel = () => {
         // options
         // cellAlign: 'left',
         // contain: true
+        imagesLoaded: true,
+        lazyLoad: true,
+        wrapAround: true
     });
 }
 
@@ -15,8 +18,11 @@ export const LatestAndBrighterCarousel = () => {
         contain: true,
         // options
         cellAlign: 'center',
-        initialIndex: 1,
-        pageDots: false
+        initialIndex: 2,
+        pageDots: false,
+        adaptiveHeight: true,
+        imagesLoaded: true,
+        lazyLoad: true
         // contain: true
     });
 }
@@ -26,7 +32,9 @@ export const NavigatorCarousel = () => {
     return new Flickity(elem, {
         // options
         contain: true,
-        pageDots: false
+        pageDots: false,
+        adaptiveHeight: true,
+        imagesLoaded: true
         // contain: true
     });
 }

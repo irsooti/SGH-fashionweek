@@ -9,7 +9,8 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html && yarn cp",
-    "deploy": "yarn build && gh-pages -d dist",
+    "deploy:build": "yarn build && gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "cp": "node .\\scripts\\copy.js"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "flickity": "^2.1.2",
+    "lozad": "^1.5.0",
     "meyer-reset-sass": "^1.0.1"
   }
 }

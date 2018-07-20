@@ -1,0 +1,444 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*  Typography  */
+body {
+  font-family: 'Brandon';
+  font-size: 17px; }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(/fonts/brandon_med-webfont.woff);
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(/fonts/brandon_bld-webfont.woff);
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(/fonts/brandon_reg-webfont.woff);
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(/fonts/brandon_thin-webfont.woff);
+  font-weight: 100; }
+
+a {
+  text-decoration: none; }
+
+.bold {
+  font-weight: bold; }
+
+.bolder {
+  font-weight: bolder; }
+
+.smaller {
+  font-size: 0.8em; }
+
+.upper {
+  text-transform: uppercase; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 11px; }
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+@media all and (min-width: 1280px) {
+  body {
+    font-size: 23px; } }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end; }
+  .toolbar .logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 53px;
+    vertical-align: middle; }
+  .toolbar * {
+    text-decoration: none; }
+  .toolbar > a {
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+    color: inherit; }
+  .toolbar .logo-title {
+    color: inherit;
+    width: 100%;
+    justify-content: center; }
+    .toolbar .logo-title span {
+      align-self: center; }
+  .toolbar [class$="-button"] {
+    width: 53px;
+    height: 53px;
+    justify-content: center;
+    flex-shrink: 0; }
+    .toolbar [class$="-button"] span {
+      align-self: center; }
+  .toolbar .bag-button {
+    background-color: #e74c3c; }
+    .toolbar .bag-button img {
+      align-self: center;
+      width: 17px;
+      height: 21px; }
+
+.offerbar {
+  text-align: center;
+  padding-left: 17px;
+  background: #000000;
+  color: #FFFFFF;
+  padding-right: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.7rem; }
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  display: block; }
+
+.container-flex {
+  display: flex; }
+
+.desktop-only {
+  display: none; }
+
+.f-column {
+  flex-direction: column; }
+
+@media all and (min-width: 1280px) {
+  .desktop-only {
+    display: block; }
+  .mobile-only {
+    display: none; }
+  .d-col-6 {
+    display: flex;
+    width: 50%; } }
+
+.carousel-controls {
+  margin-top: 32px;
+  border-top: solid 1px #000000;
+  border-bottom: solid 1px #000000; }
+
+[class^="carousel-ctrl"] {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  align-self: center;
+  line-height: normal;
+  letter-spacing: 5.1px;
+  text-transform: uppercase;
+  color: #a7a7a7; }
+  [class^="carousel-ctrl"] * {
+    display: block; }
+  [class^="carousel-ctrl"] .time {
+    letter-spacing: normal; }
+  [class^="carousel-ctrl"][aria-selected="true"] {
+    color: #000000; }
+
+.carousel-ctrl-next, .carousel-ctrl-prev {
+  max-width: 20px; }
+  .carousel-ctrl-next img, .carousel-ctrl-prev img {
+    vertical-align: middle; }
+
+@media all and (min-width: 1280px) {
+  .carousel-controls {
+    border: none; }
+    .carousel-controls .flickity-button {
+      display: none; }
+  [class^="carousel-ctrl"] {
+    margin: 15px 30px; } }
+
+.hero {
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  line-height: 1.31; }
+  .hero h2 {
+    font-weight: bolder;
+    font-size: 2em; }
+
+@media all and (min-width: 1280px) {
+  .hero h2 {
+    font-size: 3em; }
+  .banner-ny .article {
+    max-width: 606px;
+    margin: auto;
+    font-weight: 500;
+    margin-top: 35px;
+    line-height: 1.57;
+    font-size: 1rem;
+    margin-bottom: 68px;
+    letter-spacing: 1px;
+    font-weight: 400; } }
+
+.slider {
+  margin-top: 33px;
+  display: block; }
+  .slider .carousel-cell {
+    width: 100%;
+    text-align: center; }
+    .slider .carousel-cell img {
+      vertical-align: middle; }
+    .slider .carousel-cell .photographer-credits {
+      margin-bottom: 10px; }
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold; }
+  .btn.default {
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+.photographer-credits {
+  padding-top: 20px;
+  line-height: 1.8;
+  font-size: 1rem; }
+  .photographer-credits .logo {
+    width: 150px;
+    vertical-align: middle; }
+
+.divider:before {
+  content: "";
+  display: block;
+  width: 137px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #000000; }
+
+.section {
+  position: relative;
+  margin-top: 42px;
+  height: 0px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+  opacity: 0; }
+  .section.show {
+    height: 100%;
+    opacity: 1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s; }
+  .section .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%; }
+  .section [class^="banner-"] {
+    text-align: center;
+    padding: 45px 36px;
+    padding-bottom: 35px; }
+    .section [class^="banner-"] img {
+      max-width: 100%; }
+  .section .article {
+    margin-top: 35px;
+    line-height: 1.57;
+    margin-bottom: 68px; }
+
+.latest {
+  margin-top: 80px; }
+  .latest .carousel-cell {
+    width: auto; }
+    .latest .carousel-cell img {
+      margin: 8px;
+      max-width: 150px;
+      height: 225px;
+      max-height: 225px;
+      background-color: #cccccc; }
+    .latest .carousel-cell[aria-selected="false"] {
+      opacity: 0.2;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s; }
+
+.ny-bg, .london-bg {
+  height: 40vh;
+  max-height: 300px;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  background-color: #FFF; }
+
+.picture-layer {
+  position: relative;
+  width: max-content;
+  margin: auto;
+  margin-top: 40px;
+  max-width: 100%; }
+  .picture-layer .available-at {
+    color: #FFF;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    display: flex;
+    left: 0;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.2;
+    justify-content: center; }
+    .picture-layer .available-at .location {
+      font-size: 1.6em;
+      font-weight: bolder;
+      text-transform: uppercase; }
+    .picture-layer .available-at .date {
+      font-size: 1.2em;
+      font-weight: 500; }
+
+@media all and (max-width: 500px) {
+  .ny-bg {
+    background-image: url("shutterstock-490883626.eaea8e92.jpg"); } }
+
+@media all and (min-width: 500px) {
+  .ny-bg {
+    background-image: url("map-new-york.e36a7d61.jpg"); } }
+
+@media all and (max-width: 1280px) {
+  .ny-bg h4 {
+    display: none; }
+  .london-bg {
+    background-image: url("map-mobile-london.90a948f0.png"); } }
+
+@media all and (min-width: 1280px) {
+  .hero.photographer-credits {
+    padding-top: 22px;
+    line-height: 2.7; }
+  .latest .carousel-cell img {
+    max-width: 200px;
+    height: 300px;
+    max-height: 300px; }
+  .latest {
+    margin-bottom: 100px; }
+  .coach-desktop .container-flex {
+    align-items: center;
+    justify-content: center; }
+  .coach-desktop .photo {
+    margin: auto;
+    padding: 90px 140px; }
+    .coach-desktop .photo img {
+      max-width: 100%; }
+  .coach-desktop .fade-cta {
+    position: relative;
+    display: block;
+    margin: auto; }
+    .coach-desktop .fade-cta .bg-cta {
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+      opacity: 0;
+      width: 90%;
+      height: 100%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block; }
+      .coach-desktop .fade-cta .bg-cta .btn {
+        position: relative;
+        top: 50%; }
+    .coach-desktop .fade-cta:hover .bg-cta {
+      opacity: 1;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+      margin: auto;
+      height: 80%;
+      width: 80%;
+      left: 10%;
+      top: 10%;
+      visibility: visible;
+      background: rgba(255, 255, 255, 0.9); }
+  .coach-desktop .photo-right {
+    padding: 90px; }
+  .coach-desktop .photo-left .title {
+    text-align: left; }
+  .coach-desktop .divider.m100 {
+    margin-bottom: 110px; }
+  .coach-desktop .divider:before {
+    margin-left: 0;
+    position: relative;
+    left: -15px; }
+  .ny-img {
+    margin-top: 30px; }
+  .ny-bg {
+    background-image: url("map-new-york.e36a7d61.jpg"); }
+    .ny-bg h4 {
+      position: absolute;
+      transform: rotate(90deg);
+      font-size: 1.8em;
+      letter-spacing: 13.1px;
+      text-transform: lowercase;
+      right: 0;
+      top: 30;
+      padding-bottom: 30px; }
+      .ny-bg h4:after {
+        content: "";
+        position: absolute;
+        width: 137px;
+        border-bottom: solid 1px #000;
+        bottom: 0;
+        right: 10px; }
+  .london-bg {
+    background-image: url("map-london.1de6114d.jpg"); }
+  #londonSection .article {
+    margin-top: 0; }
+  .london-img {
+    display: inline-block;
+    width: 762px;
+    max-width: 100%; } }

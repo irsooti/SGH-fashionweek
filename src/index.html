@@ -59,11 +59,11 @@
         <div class="hero photographer-credits">
             <div class="photographer-name">
                 <span class="bold">SS18</span> photographed by
-                <img height="13" src="./assets/img/logo-black.png">
+                <img height="13" class="lozad" data-src="./img/logo-black.png">
             </div>
             <div class="photographer-for">
                 <span>for
-                    <img class="logo" src="assets/img/sgh-logo.svg">
+                    <img class="logo lozad" data-src="./img/sgh-logo.svg">
                 </span>
             </div>
         </div>
@@ -71,11 +71,11 @@
             <!-- <div class="carousel-ctrl-prev">
                 <img src="assets/img/prev.svg">
             </div> -->
-            <a href="#newYorkSection" class="carousel-ctrl-1 carousel-cell active">
+            <a href="#" class=" carousel-ctrl-1 carousel-cell active">
                 <span>New York</span>
                 <span class="time">09.07</span>
             </a>
-            <a href="#londonSection" class="carousel-ctrl-2 carousel-cell">
+            <a href="#" class="carousel-ctrl-2 carousel-cell">
                 <span>London</span>
                 <span class="time">09.15</span>
             </a>
@@ -84,12 +84,22 @@
             </div> -->
         </div>
 
-        <div id="newYorkSection" class="section">
-            <img srcset="
-                assets/img/shutterstock-490883626.jpg 375w,
-                assets/img/map-new-york.jpg 1000w" class="map" src="assets/img/shutterstock-490883626.jpg" alt="ny map">
+        <div data-id="0" id="newYorkSection" class="section show">
+            <div class="ny-bg">
+                <h4>new york</h4>
+            </div>
+
+            <!-- data-src="./img/banner-mobile-new-york.jpg"   -->
+
             <div class="banner-ny">
-                <img src="assets/img/banner-mobile-new-york.jpg" alt="ny">
+                <picture class="ny-img lozad" style="display: block; min-height: 1rem" data-iesrc="./assets/img/jonathan-riley-118591.png"
+                    data-alt="">
+                    <source srcset="./assets/img/jonathan-riley-118591.png" media="(min-width: 1280px)">
+                    <source srcset="./assets/img/banner-mobile-new-york.jpg" media="(min-width: 300px)">
+                    <!-- <source srcset="images/thumbs/06.jpg" media="(min-width: 320px)"> -->
+                </picture>
+
+                <!-- <img class="ny-img lozad" data-src="./img/jonathan-riley-118591.png" alt="ny"> -->
 
                 <div class="article text-center">
                     Style has no boundaries. Sunglass Hut introduces a new, inspiring guide to the latest Fashion Shows and Street patterns of
@@ -105,13 +115,13 @@
                         <img src="assets/img/prev.svg">
                     </div> -->
                     <div class="carousel-cell">
-                        <img src="assets/img/1020-1.png" data-flickity-lazyload="1020-1.04d011a1.png">
+                        <img data-flickity-lazyload="./img/1020-1.png">
                         <div class="divider"></div>
                         <div>
                             <div class="photographer-credits text-center">
                                 <div>
                                     photographed by
-                                    <img height="13" src="./assets/img/logo-black.png">
+                                    <img height="13" class="lozad" data-flickity-lazyload="./img/logo-black.png">
                                 </div>
                                 <div class="upper">
                                     NEW YORK, 09.12.17
@@ -127,13 +137,13 @@
                     </div>
                     <div class="carousel-cell">
                         <!-- data-flickity-lazyload="1020-1.04d011a1.png" -->
-                        <img src="assets/img/1020-1.png">
+                        <img class="lozad" data-src="./img/1020-1.png">
                         <div class="divider"></div>
                         <div>
                             <div class="photographer-credits text-center">
                                 <div>
                                     photographed by
-                                    <img height="16" src="./assets/img/logo-black.png">
+                                    <img height="16" data-flickity-lazyload="./img/logo-black.png">
                                 </div>
                                 <div class="upper">
                                     NEW YORK, 09.12.17
@@ -148,13 +158,13 @@
                         </div>
                     </div>
                     <div class="carousel-cell">
-                        <img src="assets/img/1020-1.png" data-flickity-lazyload="1020-1.04d011a1.png">
+                        <img data-flickity-lazyload="./img/1020-1.png">
                         <div class="divider"></div>
                         <div>
                             <div class="photographer-credits text-center">
                                 <div>
                                     photographed by
-                                    <img height="16" src="./assets/img/logo-black.png">
+                                    <img height="16" data-flickity-lazyload="./img/logo-black.png">
                                 </div>
                                 <div class="upper">
                                     NEW YORK, 09.12.17
@@ -182,31 +192,27 @@
                         <div class="photo photo-left">
                             <h3 class="title text-center">Coach</h3>
                             <div class="divider m100"></div>
-                            <img src="assets/img/new-york1.jpg" data-flickity-lazyload="1020-1.04d011a1.png">
+                            <img class="lozad" data-src="./img/new-york1.jpg">
                             <div class="divider "></div>
                             <div>
-                                <div class="photographer-credits text-center">
+                                <div class="photographer-credits text-left">
                                     <div>
                                         photographed by
-                                        <img height="13" src="./assets/img/logo-black.png">
+                                        <img height="13" class="lozad" data-src="./img/logo-black.png">
                                     </div>
-                                    <div class="upper">
+                                    <div class="upper smaller">
                                         NEW YORK, 09.12.17
                                     </div>
 
                                 </div>
-                                <div>
-                                    <a class="btn default" href="#">
-                                        VIEW ALL FRAMES
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="d-col-6 f-column">
                         <div class="photo photo-right">
                             <div class="fade-cta">
-                                <img src="assets/img/new-york2.jpg" data-flickity-lazyload="1020-1.04d011a1.png">
+                                <img class="lozad" data-src="./img/new-york2.jpg">
                                 <div class="bg-cta">
                                     <a class="btn default" href="#">
                                         VIEW ALL FRAMES
@@ -218,9 +224,9 @@
                                 <div class="photographer-credits text-left">
                                     <div>
                                         photographed by
-                                        <img height="13" src="./assets/img/logo-black.png">
+                                        <img height="13" class="lozad" data-src="./img/logo-black.png">
                                     </div>
-                                    <div class="upper">
+                                    <div class="upper smaller">
                                         NEW YORK, 09.12.17
                                     </div>
 
@@ -230,7 +236,7 @@
                         </div>
                         <div class="photo photo-right">
                             <div class="">
-                                <img src="assets/img/0-ve-2184-125287-000-a.png" data-flickity-lazyload="1020-1.04d011a1.png">
+                                <img class="lozad" data-src="./img/0-ve-2184-125287-000-a.png">
 
                             </div>
                             <div>
@@ -253,33 +259,54 @@
                 </div>
             </div>
             <div class="latest">
-                <h4 class="title text-center">Latest and brighter</h3>
+                <h4 class="title text-center">Latest and brighter</h4>
                     <div class="divider"></div>
 
-                    <div id="latestandbrighter-carousel" class="slider" data-flickity='{ "lazyLoad": true }'>
-                        <div class="carousel-cell">
-                            <img src="assets/img/placeholder-slide.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="assets/img/placeholder-slide.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="assets/img/placeholder-slide.jpg">
-                        </div>
+                <div id="latestandbrighter-carousel" class="slider" data-flickity='{ "lazyLoad": true }'>
+                    <div class="carousel-cell">
+                        <img height="407" width="610" data-flickity-lazyload="./img/placeholder-slide.jpg">
                     </div>
-            </div>
-            <div id="londonSection" class="section">
-                <img class="map" src="assets/img/map-mobile-london.png" alt="ny map">
-                <div class="banner-ny">
-                    <img src="assets/img/banner-mobile-london.jpg" alt="london">
-
-                    <div class="article text-center bold">
-                        COMING SOON
+                    <div class="carousel-cell">
+                        <img height="407" width="610" data-flickity-lazyload="./img/placeholder-slide.jpg">
+                    </div>
+                    <div class="carousel-cell">
+                        <img height="407" width="610" data-flickity-lazyload="./img/placeholder-slide.jpg">
+                    </div>
+                    <div class="carousel-cell">
+                        <img height="407" width="610" data-flickity-lazyload="./img/placeholder-slide.jpg">
+                    </div>
+                    <div class="carousel-cell">
+                        <img height="407" width="610" data-flickity-lazyload="./img/placeholder-slide.jpg">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div data-id="1" id="londonSection" class="section">
+            <div class="london-bg">
+
+            </div>
 
 
+            <div class="banner-london">
+                <div class="picture-layer">
+                    <picture class="london-img lozad" data-iesrc="./assets/img/banner-london.jpg" data-alt="">
+                        <source srcset="./assets/img/banner-london.jpg" media="(min-width: 1280px)">
+                        <source srcset="./assets/img/banner-mobile-london.jpg" media="(min-width: 300px)">
+                        <!-- <source srcset="images/thumbs/06.jpg" media="(min-width: 320px)"> -->
+                    </picture>
+                    <div class="available-at">
+                        <div class="location">London</div>
+                        <div class="date">09.15</div>
+                    </div>
+                </div>
+                <!-- <img src="assets/img/banner-mobile-london.jpg" alt="london"> -->
+            </div>
+            <div class="article text-center bold">
+                COMING SOON
+            </div>
 
+        </div>
 
     </main>
     <script src="assets/js/main.js"></script>
